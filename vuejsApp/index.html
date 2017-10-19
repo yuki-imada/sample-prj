@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="">
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+<div id="example">
+  <p v-bind:class="{'ok': isValid, 'error': !isValid}">名前:
+  <span v-if="isValid">{{ name }}</span>
+  <span v-else>入力してください</span>
+  </p>
+  入力(フォーカス外れると変数を上書き)<br>
+  <input type="text" v-on:change="name = $event.target.value"><br>
+  v-modelディレクティブを使用<br>
+  <input v-model="name"><br>
+
+  <p v-bind:style="{'background-color': (isShort ? 'green' : 'red')}">PW:
+  <span v-if="isShort">{{ pw }}</span>
+  <span v-else>8文字以上の長さにして下さい。(あと{{ 8 - pw.length }}文字)</span>
+  </p>
+  入力(動的に関数呼び出し)<br>
+  <!-- なぜコロンが入るのかわからない… //-->
+  <input type="text" v-on:input="updatePw"><br>
+  v-modelディレクティブ(遅延オプション)を使用<br>
+  <input v-model.lazy="pw">
+
+  <p v-show="isValid">
+    <button v-on:click="sendData">送信</button>
+  </p>
+
+<div>
+  <comp-comp></comp-comp>
+  <comp-ext></comp-ext>
+  <list-parent>反映される</list-parent>
+  <list-child>反映されない</list-child>
+</div>
+
+<fruits-list v-for="item in lists" :my-lists="item"></fruits-list>
+<f-list v-for="item in lists" :my-lists="item"></f-list>
+
+<div v-for="cname in counts">
+  {{cname.name}}: <c-butt v-on:increment="increment()"></c-butt>
+</div>
+<p>合計: {{total}}</p>
+
+</body>
+<script src="app.js"></script>
+</html>
