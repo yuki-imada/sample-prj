@@ -7,48 +7,43 @@ body {
 
 /*h1、h2、h3タグのmarginとpaddingを0px*/
 /*h1、h2、h3タグのフォントサイズをそれぞれ34px、21px、13px*/
-#head h1 {
+h1 {
   margin: 0;
   padding: 0;
   font-size: 34px;
 }
 
-#menu h2 {
+h2 {
   margin: 0;
   padding: 0;
   font-size: 21px;
 }
 
-#contents h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 21px;
-}
 
-#contents h3 {
+h3 {
   margin: 0;
   padding: 0;
   font-size: 13px;
 }
 
 /*テーブル1のヘッダ行の背景色を#00285eに、文字の色を#ffffff*/
-.contents02 h3{
+#table01 thead {
   background-color: #00285e;
   color: #ffffff;
 }
 /*テーブル1のその他の行の背景色を#d4e6ffに、文字の色を#00285e*/
-.contents02{
+#table01 tbody {
   background-color: #d4e6ff;
   color: #00285e;
 }
 
 /*テーブル2のヘッダ行の背景色を#6bad4fに、文字の色を#ffffff*/
-.contents03 h3{
+#table02 thead {
   background-color: #6bad4f;
   color: #ffffff;
 }
 /*テーブル2のその他の行の背景色を#dbecd5に、文字の色を#6bad4f*/
-.contents03{
+#table02 tbody {
   background-color: #dbecd5;
   color: #6bad4f;
 }
