@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
-  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="./btn3.js"></script>
   <script src="./btn4.js"></script>
   <script src="./btn5.js"></script>
@@ -15,92 +15,86 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div id="head">
-        <div class="col-xs-12">
-          <h1>ほげほげシステム</h1>
-        </div>
+      <div id="head" class="col-xs-12">
+        <h1>ほげほげシステム</h1>
       </div>
     </div>
 
     <div class="row">
-      <div id="menu">
-        <div class="col-xs-2">
-          <h2>メニュー</h2>
-            <a href="/">トップページ</a></br>
-            <a href="a.html">Aのページ</a></br>
-            <a href="b.html">Bのページ</a></br>
-            <a href="c.html">Cのページ</a></br>
-          </div>
+      <div id="menu" class="col-xs-2">
+        <h2>メニュー</h2>
+          <a href="/">トップページ</a></br>
+          <a href="a.html">Aのページ</a></br>
+          <a href="b.html">Bのページ</a></br>
+          <a href="c.html">Cのページ</a></br>
+      </div>
+
+      <div id="contents" div class="col-xs-10">
+        <div id="input_area">
+          <h2>コンテンツ</h2>
+          <h3>テキストエリアとボタン</h3>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="">テキストエリア1<br>
+            <button type="button" name="btn1">ボタン1</button><br>
+            <input type="text" name="" value="">テキストエリア2<br>
+            <button type="button" name="btn1">ボタン2</button><br>
+            <br>
+            <button type="button" name="btn3" onClick="btn03()">ボタン3</button>
+            <button type="button" name="btn4" onClick="btn04()">ボタン4</button>
+            <button type="button" name="btn5" onClick="btn05()">ボタン5</button>
+            <br>
+            <br>
+          </form>
         </div>
 
-      <div id="contents">
-        <div class="col-xs-10">
-          <div id="input_area">
-            <h2>コンテンツ</h2>
-            <h3>テキストエリアとボタン</h3>
-            <form class="" action="index.html" method="post">
-              <input type="text" name="" value="">テキストエリア1<br>
-              <button type="button" name="btn1">ボタン1</button><br>
-              <input type="text" name="" value="">テキストエリア2<br>
-              <button type="button" name="btn1">ボタン2</button><br>
-              <br>
-              <button type="button" name="btn3" onClick="btn03()">ボタン3</button>
-              <button type="button" name="btn4" onClick="btn04()">ボタン4</button>
-              <button type="button" name="btn5" onClick="btn05()">ボタン5</button>
-              <br>
-              <br>
-            </form>
-          </div>
+        <div id="table01">
+          <h3>テーブル①</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>日時</th>
+                <th>講演タイトル</th>
+                <th>MF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2017/10/19</td>
+                <td>AVISHAI COHEN TRIO</td>
+                <td>8,500</td>
+              </tr>
+              <tr>
+                <td>2017/10/24</td>
+                <td>CHUCHO VALDÉS & GONZALO RUBALCABA "TRANCE"</td>
+                <td>9,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div id="table01">
-            <h3>テーブル①</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>日時</th>
-                  <th>講演タイトル</th>
-                  <th>MF</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2017/10/19</td>
-                  <td>AVISHAI COHEN TRIO</td>
-                  <td>8,500</td>
-                </tr>
-                <tr>
-                  <td>2017/10/24</td>
-                  <td>CHUCHO VALDÉS & GONZALO RUBALCABA "TRANCE"</td>
-                  <td>9,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div id="table02">
-            <h3>テーブル②</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>日時</th>
-                  <th>講演タイトル</th>
-                  <th>MF</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2017/10/19</td>
-                  <td>AVISHAI COHEN TRIO</td>
-                  <td>8,500</td>
-                </tr>
-                <tr>
-                  <td>2017/10/24</td>
-                  <td>CHUCHO VALDÉS & GONZALO RUBALCABA "TRANCE"</td>
-                  <td>9,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div id="table02">
+          <h3>テーブル②</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>日時</th>
+                <th>講演タイトル</th>
+                <th>MF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2017/10/19</td>
+                <td>AVISHAI COHEN TRIO</td>
+                <td>8,500</td>
+              </tr>
+              <tr>
+                <td>2017/10/24</td>
+                <td>CHUCHO VALDÉS & GONZALO RUBALCABA "TRANCE"</td>
+                <td>9,000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
