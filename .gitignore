@@ -1,16 +1,2 @@
-# exe ファイルは要らない
-*.exe
-
-# .gitフォルダは要らない
-/git/
-
+.git/
 node_modules/
-# .gitignore
-
-npm-debug.log
-00.old/
-github_memo.md
-smple.html
-
-/src/
-/build/
