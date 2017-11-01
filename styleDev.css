@@ -3,13 +3,13 @@
 /*デバッグ・勉強用に要素に色をつけるためのCSS*/
 
 /*div要素に背景色を塗る*/
-#wrapper { background-color: #eeeeee; }
-#head { background-color: #eeffff; }
-#menu { background-color: #ffeeff; }
-#contents { background-color: #ffffee; }
-#contents #input_area {background-color: #eeeeff; }
-#contents #table01 { background-color: #eeffee; }
-#contents #table02 { background-color: #ffeeee; }
+#wrapper { background-color: #dddddd; }
+#head { background-color: #ddffff; }
+#menu { background-color: #ffddff; }
+#contents { background-color: #ffffdd; }
+#contents #input_area {background-color: #ddddff; }
+#contents #table01 { background-color: #ffdddd; }
+#contents #table02 { background-color: #ddffdd; }
 
 /*Bootstrapのrowを点線で括る*/
 .row { border: dashed 1px #000000; }
