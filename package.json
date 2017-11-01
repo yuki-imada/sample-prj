@@ -1,0 +1,28 @@
+{
+  "name": "sample-prj",
+  "version": "1.0.0",
+  "description": "このリポジトリは、フロントエンドの勉強とgit及びGitHubの使い方を勉強するためのリポジトリです。",
+  "main": "btn3.js",
+  "dependencies": {
+    "node": "^6.10.3",
+    "bootstrap": "^3.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaotoIshida/sample-prj.git"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "npm": "^3.10.10",
+    "webpack": "^3.8.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaotoIshida/sample-prj/issues"
+  },
+  "homepage": "https://github.com/NaotoIshida/sample-prj#readme"
+}
